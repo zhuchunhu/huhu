@@ -17,7 +17,7 @@ proxies:
   servername: ''
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
