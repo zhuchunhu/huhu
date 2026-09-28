@@ -5,42 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: ss
-  server: 176.32.35.2
-  port: 10090
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 172.67.133.170
-  port: 443
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: peekconfigg.vipserver1-39d.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: peekconfigg.vipserver1-39d.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  type: vless
-  server: 162.159.38.127
-  port: 2082
+  server: 172.64.42.85
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 108.162.198.178
+  server: 104.18.34.14
   port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -51,21 +30,59 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 172.67.223.101
-  port: 2087
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  server: 162.159.43.187
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  type: vless
+  server: 172.64.154.8
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  type: vless
+  server: 172.64.52.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vless
+  server: 172.64.42.85
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   type: vless
   server: fbsv6.guardora.pro
   port: 443
@@ -79,20 +96,6 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: vless
-  server: 172.64.145.202
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: newwk1.f1w.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
 proxy-groups:
 - name: PROXIES
   type: select
