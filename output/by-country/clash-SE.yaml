@@ -31,20 +31,34 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: sub.merky.top
+      Host: 94.143.231.146
 - name: 🇸🇪 SE 03 - xiaohe
   type: vless
-  server: 88.216.223.66
-  port: 443
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: tcpswed1.figurapn.ru
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 SE 04 - xiaohe
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - xiaohe
   type: vless
   server: 94.143.231.146
   port: 443
@@ -58,7 +72,7 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 05 - xiaohe
+- name: 🇸🇪 SE 06 - xiaohe
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -71,20 +85,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 06 - xiaohe
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 - name: 🇸🇪 SE 07 - xiaohe
   type: vless
   server: 94.143.231.146
@@ -98,7 +98,7 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: 94.143.231.146
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
