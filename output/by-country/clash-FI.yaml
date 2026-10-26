@@ -15,20 +15,21 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.144.234.157
+      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
   server: 65.109.212.193
@@ -45,6 +46,18 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 04 - xiaohe
   type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 05 - xiaohe
+  type: vless
   server: 65.109.212.193
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -57,7 +70,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 05 - xiaohe
+- name: 🇫🇮 FI 06 - xiaohe
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -70,18 +83,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 06 - xiaohe
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 07 - xiaohe
   type: vless
   server: 95.216.27.15
@@ -96,6 +97,37 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 08 - xiaohe
   type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 09 - xiaohe
+  type: ss
+  server: location8.cpanel-host10.ir
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇫🇮 FI 10 - xiaohe
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 11 - xiaohe
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -107,20 +139,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 09 - xiaohe
-  type: vless
-  server: 65.109.212.193
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,6 +153,8 @@ proxy-groups:
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
+  - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -149,5 +169,7 @@ proxy-groups:
   - 🇫🇮 FI 07 - xiaohe
   - 🇫🇮 FI 08 - xiaohe
   - 🇫🇮 FI 09 - xiaohe
+  - 🇫🇮 FI 10 - xiaohe
+  - 🇫🇮 FI 11 - xiaohe
 rules:
 - MATCH,PROXIES

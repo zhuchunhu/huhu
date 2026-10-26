@@ -5,31 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: vless
-  server: 194.55.239.89
-  port: 443
-  uuid: 073b7df7-5527-45a2-ba29-183b85c39071
+  type: ss
+  server: 195.133.5.107
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: broadcast.liveflow.space
-  network: ws
-  ws-opts:
-    path: /live.stream.v1.Broadcast/
-    headers:
-      Host: broadcast.liveflow.space
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: de12b.h1cloud.net
-  port: 25172
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  type: ss
+  server: 91.206.92.238
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Xr55Hig_JTeUluiGfSnma6zMHG2Uv5Xu30ZODGF5xGA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
