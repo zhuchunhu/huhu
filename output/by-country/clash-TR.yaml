@@ -30,18 +30,18 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   type: vless
-  server: 177.3.208.65
+  server: 155.103.71.142
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vless-tr
+    path: /fp=chrome
     headers:
-      Host: 177.3.208.65
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   type: vless
   server: 155.103.71.142
@@ -56,20 +56,6 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +65,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,6 +74,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
 rules:
 - MATCH,PROXIES
