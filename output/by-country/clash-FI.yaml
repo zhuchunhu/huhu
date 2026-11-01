@@ -32,13 +32,13 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - xiaohe
   type: vless
-  server: 65.109.211.81
+  server: hw6.divarkhaghazi.com
   port: 465
   uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
     path: /
