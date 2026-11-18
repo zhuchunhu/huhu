@@ -105,7 +105,7 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 09 - xiaohe
   type: vless
   server: in.smrtai.top
@@ -117,7 +117,7 @@ proxies:
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
