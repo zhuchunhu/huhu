@@ -6,18 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - xiaohe
   type: vmess
-  server: 103.88.232.55
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: None
-- name: 🇧🇷 BR 02 - xiaohe
-  type: vmess
-  server: 103.88.232.55
+  server: 103.14.27.207
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -26,7 +15,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇧🇷 BR 03 - xiaohe
+- name: 🇧🇷 BR 02 - xiaohe
   type: vmess
   server: 103.14.27.207
   port: 1270
@@ -37,6 +26,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇧🇷 BR 03 - xiaohe
+  type: vmess
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: None
 proxy-groups:
 - name: PROXIES
   type: select
