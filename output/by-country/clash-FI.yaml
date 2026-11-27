@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaohe
+- name: 🇫🇮 FI 01 - xiaohe
   type: vless
-  server: h-pl.ok-habits.xyz
+  server: 92.38.145.145
   port: 443
-  uuid: 259ec8bc-5a6b-4b33-8a71-c40e8d150c24
+  uuid: 3f734801-dacb-418f-b1e7-340427940c77
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-  servername: 1.4.8.8
-  client-fingerprint: chrome
+  servername: gcore.com
+  network: ws
+  ws-opts:
+    path: /dl
+    headers:
+      Host: app1.gptban.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaohe
+  - 🇫🇮 FI 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaohe
+  - 🇫🇮 FI 01 - xiaohe
 rules:
 - MATCH,PROXIES
